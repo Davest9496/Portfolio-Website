@@ -1,0 +1,140 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --primary-color: #fff;
+    --secondary-color: #251d3a;
+}
+.dark-theme{
+    --primary-color: #000106;
+    --secondary-color: #fff;
+} 
+
+#moon{
+    cursor: pointer;
+    object-fit: contain;
+    /* width: 5rem; */
+}
+
+.hero{
+    padding: 2% 7%;
+    height: 100vh;
+    width: 100%;
+    background-color: var(--primary-color);
+}
+
+.logo h1{
+    font-family: 'My Soul',
+    cursive;
+    font-size: 28px;
+    font-weight: 600;
+    color: #F30F0F;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+}nav ul{
+     flex: 1;
+     text-align: right;
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+nav ul li a{
+    color: var(--secondary-color);
+    text-decoration: none;
+    font-family: 'Water Brush',
+    cursive;
+    font-weight: 600;
+}
+nav ul li a:hover{
+    color: #F30F0F;
+}
+#lightbulb{
+    color: #fff;
+    /* display: hidden; */
+}
+.fa-solid{
+    cursor: pointer;
+    margin-top: 12px;
+    font-size: 18px;
+}
+.fa-brands{
+    color: var(--secondary-color);
+}
+
+h1, h2, p{
+    font-family: 'Source Code Pro',
+    monospace;
+    color: var(--secondary-color);
+    font-weight: 300;
+}
+h1{
+    font-size: 48px;
+}
+span{
+    color: #F30F0F;
+}
+
+.info{
+    position: relative;
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    align-items: center;
+}
+.about-text{
+font-size: 18px;
+margin: 10px 0;
+line-height: 1.5;
+}
+.info h2{
+    margin: 10px 0;
+}
+.cv{
+    background-color: var(--secondary-color);
+    border-radius: 5px;
+    display: inline-block;
+    text-decoration: none;
+    padding: 10px 18px;
+    margin: 30px 0;
+    color: var(--primary-color);
+}
+.about{
+   flex: 1;
+}
+
+.profile{
+    width: 35%;
+    height: 80%;
+    position: absolute;
+    right: 100px;
+}
+.profile img{
+    height: 100%;
+    position: absolute;
+    left: 25%;
+    /* transform: translateX(-50); */
+    transition: left 2s, height 2s,right 2s;
+}
+.profile:hover .shadow{
+    height: 85%;
+    right: 30px;
+}
+.profile:hover .profile-img{
+    left: 30px;
+}
+
+.fa-brands{
+    margin-right: 20px;
+    font-size: 28px;
+}
+.fa-brands:hover{
+    color: #F30F0F;
+}
